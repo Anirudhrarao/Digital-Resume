@@ -1,0 +1,243 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #0f0;
+    /* Green text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    /* Clear floats */
+    /* border: 2px solid #0f0;
+    padding: 20px;
+    border-radius: 10px; */
+}
+
+.content {
+    width: calc(100% - 200px);
+    /* Adjust width for the image */
+    float: left;
+    /* Float content to the left */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+    /* Float image to the right */
+    margin-left: 20px;
+    /* Add some space between content and image */
+}
+
+h1 {
+    color: #0f0;
+    /* Green heading */
+    font-size: 32px;
+    /* Increase font size */
+}
+
+p {
+    color: #0f0;
+    /* Green text */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #0f0;
+    /* Green border */
+    border-radius: 5px;
+    background-color: #111;
+    /* Dark background */
+    color: #0f0;
+    /* Green text */
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #0f0;
+    /* Green background on hover */
+    color: #000;
+    /* Black text on hover */
+}
+
+.button i {
+    margin-right: 5px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.profile-img:hover img {
+    animation: bobbing 0.5s infinite alternate;
+}
+
+@keyframes bobbing {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-duration {
+    text-align: right;
+}
+
+.education-duration p {
+    margin: 5px 0;
+}
+
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    color: #0f0;
+    margin-right: 20px;
+}
+
+.skill-category p {
+    flex: 1;
+    text-align: right;
+}
+
+.skill-category p i {
+    margin-left: 5px;
+}
+
+.skill-category p i:first-child {
+    margin-left: 0;
+}
+
+.python-icon {
+    color: #3572A5;
+}
+
+.java-icon {
+    color: #5382A1;
+}
+
+.js-icon {
+    color: #F7DF1E;
+}
+
+.django-icon {
+    color: #44B78B;
+}
+
+.django-rest-icon {
+    color: #44B78B;
+}
+
+.mysql-icon {
+    color: #4479A1;
+}
+
+.mongodb-icon {
+    color: #599636;
+}
+
+.vscode-icon {
+    color: #007ACC;
+}
+
+.pycharm-icon {
+    color: #A5A5A5;
+}
+
+.jupyter-icon {
+    color: #F37626;
+}
+
+.git-icon {
+    color: #F05032;
+}
+
+.github-icon {
+    color: #6CC644;
+}
+
+.certifications {
+    margin-top: 20px;
+}
+
+.certifications a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #0f0;
+    /* Green border */
+    border-radius: 5px;
+    background-color: #111;
+    /* Dark background */
+    color: #0f0;
+    /* Green text */
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.certifications a:hover {
+    background-color: #0f0;
+    /* Green background on hover */
+    color: #000;
+    /* Black text on hover */
+}
+
+.certifications a i {
+    margin-right: 5px;
+}
+
+
+
+/* Your existing CSS */
+@media screen and (min-width: 768px) {
+
+    /* Adjustments for tablets and larger screens */
+    .container {
+        max-width: 80%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Add more media queries as needed */
+}
